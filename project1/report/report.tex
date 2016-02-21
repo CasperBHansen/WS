@@ -1,0 +1,135 @@
+\documentclass[10pt,a4paper]{article}
+
+
+%==============================================================================%
+% PACKAGES                                                                     %
+%==============================================================================%
+
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{multicol}
+
+
+%==============================================================================%
+% SETTINGS                                                                     %
+%==============================================================================%
+
+\setcounter{tocdepth}{1}
+
+% \renewcommand{\thesubsubsection}{\alph{subsubsection})}
+
+
+%==============================================================================%
+% DEFINITIONS                                                                  %
+%==============================================================================%
+
+\newcommand{\assignmentnumber}{1}
+
+\newcommand{\theabstract}
+{
+    % \lipsum[1-1]
+    In this project we replicate some experiments reported in Hansen et al.[]
+}
+
+
+%==============================================================================%
+% COMMANDS                                                                     %
+%==============================================================================%
+
+% usage: \authform{<full name>}{<student id>}
+\newcommand{\authform}[2]
+{
+    #1\\ % full name
+    Datalogisk Institut\\
+    Københavns Universitet\\
+    {\tt #2@alumni.ku.dk}\\ % student id
+}
+
+\newcommand{\colbreak}{{\ }\vfill\columnbreak}
+
+
+%==============================================================================%
+% META                                                                         %
+%==============================================================================%
+
+\title
+{
+    Web Science \\
+    {\Large Project \assignmentnumber, Hold 9F}
+}
+
+\author
+{
+    \authform{Casper B. Hansen}{fvx507}
+}
+
+\date{\today}
+
+
+%==============================================================================%
+% DOCUMENT                                                                     %
+%==============================================================================%
+
+\begin{document}
+
+\clearpage
+\maketitle
+%\thispagestyle{empty}
+
+\setlength{\columnsep}{0pt}
+\begin{multicols}{2}
+    \theabstract
+    \colbreak
+    \tableofcontents
+\end{multicols}
+\setlength{\columnsep}{10pt}
+
+%\clearpage
+
+
+%==============================================================================%
+% DOCUMENT                                                                     %
+%==============================================================================%
+
+\begin{multicols}{2}
+    \section{Chosen Vaccines}
+    % which vaccines you chose
+
+    \subsection{HPV (Human Papillomavirus-Vaccine}
+    \dots
+
+    \subsection{MFR (Mæslinge-, Fåresyge- og Røde Hunde Vaccine)}
+    \dots
+
+    \section{Query Terms}
+    % how you found query terms
+    \dots
+
+    \section{Query Frequency Mining}
+    % how you mined query frequencies from the web
+    \dots
+
+    \section{Methodology}
+    % what method you used for prediction
+    \dots
+
+    \section{Settings}
+    % what settings you used for the experiments
+    \dots
+
+    \section{Experiment Results}
+    % the experimental results and
+    \dots
+
+    \section{Discussion}
+    % a brief discussion of these results
+    \dots
+
+
+\end{multicols}
+
+\end{document}
